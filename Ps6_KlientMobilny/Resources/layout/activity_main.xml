@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="46.1dp"
+        android:id="@+id/buttonLayout">
+        <Button
+            android:text="Con"
+            android:layout_width="75.0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/poloczButton"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="1dp"/>
+        <Button
+            android:text="Ram"
+            android:layout_width="75.4dp"
+            android:layout_height="match_parent"
+            android:id="@+id/RamButton"
+            android:layout_marginRight="5dp"/>
+        <Button
+            android:text="Cpu"
+            android:layout_width="78.9dp"
+            android:layout_height="match_parent"
+            android:id="@+id/CpuButton"
+            android:layout_marginRight="5dp"/>
+        <Button
+            android:text="Dysk"
+            android:layout_width="82.3dp"
+            android:layout_height="match_parent"
+            android:id="@+id/DyskButton"
+            android:layout_marginRight="5dp"/>
+        <Button
+            android:text="Stop"
+            android:layout_width="73.1dp"
+            android:layout_height="match_parent"
+            android:id="@+id/StopButton"
+            android:layout_marginRight="0.0dp" />
+         
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="37.7dp"
+        android:id="@+id/checkboxLayout">
+        <CheckBox
+            android:text="Ram"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/ramCheckBox" />
+        <CheckBox
+            android:text="Cpu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/cpuCheckBox" />
+        <CheckBox
+            android:text="Dysk"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/dyskCheckBox" />
+        <Button
+            android:text="Req"
+            android:layout_width="73.1dp"
+            android:layout_height="match_parent"
+            android:id="@+id/RequestButton"
+            android:layout_marginLeft="5dp" />
+        <CheckBox
+            android:text="R"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/RamReqCheckBox" />
+        <CheckBox
+            android:text="C"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/CpuReqCheckBox" />
+        <CheckBox
+            android:text="D"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/DyskReqCheckBox" />
+    </LinearLayout>
+ 
+   
+
+
+    <TextView
+        android:text="Cpu label"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="36.0dp"
+        android:id="@+id/cpuView"
+        android:layout_marginBottom="10.0dp"
+        />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="394.3dp"
+        android:layout_height="29.3dp"
+        android:id="@+id/cpuProgresBar" />
+    <TextView
+        android:text="RAM label"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="36.0dp"
+        android:id="@+id/ramView"
+        android:layout_marginBottom="10.0dp" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="394.3dp"
+        android:layout_height="31.2dp"
+        android:id="@+id/ramProgresBar" />
+    <TextView
+        android:text="Dysk label"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="36.0dp"
+        android:id="@+id/dyskView"
+        android:layout_marginBottom="10.0dp" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="394.3dp"
+        android:layout_height="27.8dp"
+        android:id="@+id/dyskProgresBar" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="331.8dp">
+        <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="66.7dp"
+            android:id="@+id/RespText" />
+        <microcharts.droid.ChartView
+            android:id="@+id/CpuChart"
+            android:layout_width="match_parent"
+            android:layout_height="68.2dp"
+            android:layout_marginBottom="5dp"
+            
+            />
+        <microcharts.droid.ChartView
+            android:id="@+id/RamChart"
+            android:layout_width="match_parent"
+            android:layout_height="68.2dp"
+            android:layout_marginBottom="5dp"/>
+        <microcharts.droid.ChartView
+            android:id="@+id/dyskChart"
+            android:layout_width="match_parent"
+            android:layout_height="75.0dp"
+            android:layout_marginBottom="5dp"/>
+
+
+
+    </LinearLayout>
+    
+    
+</LinearLayout>
